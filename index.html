@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@mariohamann/activity-graph/dist/activity-graph.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="">
+    <div class="container">
+      <nav class="navbar">
+        <div class="box Theme">
+          <div class="item" onclick="theme()">
+            <ion-icon id="lightBtn" name="sunny-outline"></ion-icon>
+            <ion-icon id="DarkBtn" name="moon-outline" style="display: none"></ion-icon>
+          </div>
+        </div>
+        <div class="box nav">
+          <div class="item active">
+            <a href="#About">
+              <ion-icon name="person-circle-outline"></ion-icon>
+              <p>About</p>
+            </a>
+            <div class="divider rtl"></div>
+          </div>
+          <div class="item active">
+            <a href="#Resume">
+              <ion-icon name="file-tray-full-outline"></ion-icon>
+              <p>Resume</p>
+            </a>
+            <div class="divider rtl"></div>
+          </div>
+          <div class="item active">
+            <a href="#Project">
+              <ion-icon name="hammer-outline"></ion-icon>
+              <p>Project</p>
+            </a>
+            <div class="divider rtl"></div>
+          </div>
+          <div class="item active">
+            <a href="#Contact">
+              <ion-icon name="call-outline"></ion-icon>
+              <p>Contact</p>
+            </a>
+            <div class="divider rtl"></div>
+          </div>
+        </div>
+      </nav>
+      
+      <div class="box Profile">
+        <img src="23.png" alt="cris" class="header">
+        <img src="img_fot.png" alt="cris" class="img">
+        <h2>Cris Jhon P. Deguiñon</h2>
+        <p id="typed" class="colored">Front-End Developer</p>
+        
+        <ul>
+          <li><a href="https://www.facebook.com/crisjhon.deguinon"><ion-icon name="logo-facebook"></ion-icon></a></li>
+          <li><a href="https://www.instagram.com/_crisjn?igsh=cmg3bjR6amN4czZp"><ion-icon name="logo-instagram"></ion-icon></a></li>
+          <li><a href="https://t.me/ArtificialArtPe"><ion-icon name="paper-plane-outline"></ion-icon></a></li>
+          <li><a href="https://discord.gg/qJhGCC75"><ion-icon name="logo-discord"></ion-icon></a></li>
+        </ul>
+        
+        <div class="footer">
+          <div class="divider rtl"></div>
+          <table>
+            <tr>
+              <td><a href="#Resume">My Resume<ion-icon name="file-tray-full-outline"></ion-icon></a></td>
+              <td><a href="#Contact">Contact Me<ion-icon name="call-outline"></ion-icon></a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      
+      <div class="box content">
+        <div class="wrapper">
+          <h2 id="About">Hey <span class="colored"></span>there!👋🏼</h2>
+          <div class="divider ltr"></div>
+          <p>I'm Cris Jhon Deguiñon Frontend Developer. I have self-motivated to thrive challenges and dynamic environments. <span class="colored">seeking a competitive position to improve my skills to be contributed on professional organization.</span> I'm very passionate to learn new stuff that I have interest in, that can help me to get better at it.</p>
+          
+          <section class="achivements">
+            <div>
+              <h3><ion-icon name="layers-outline"></ion-icon> 15</h3>
+              <p>Website Design</p>
+            </div>
+            <div>
+              <h3><ion-icon name="calendar-outline"></ion-icon> 3</h3>
+              <p>Years of Programming</p>
+            </div>
+            <div>
+              <h3><ion-icon name="rocket-outline"></ion-icon> 12</h3>
+              <p>Completed Project</p>
+            </div>
+          </section>
+          
+          <h2>My <span class="colored">Skills</span></h2>
+          <div class="divider ltr"></div>
+          
+          <section class="skills">
+            <div><ion-icon name="logo-html5"></ion-icon><p>HTML</p></div>
+            <div><ion-icon name="logo-css3"></ion-icon><p>CSS</p></div>
+            <div><ion-icon name="logo-python"></ion-icon><p>PYTHON</p></div>
+            <div><ion-icon name="logo-react"></ion-icon><p>REACT</p></div>
+            <div>
+              <div class="circle" style="--percent:35%">
+                <h4>35<small>%</small></h4>
+              </div>
+              <p>Django</p>
+            </div>
+            <div>
+              <div class="circle" style="--percent:85%">
+                <h4>85<small>%</small></h4>
+              </div>
+              <p>MySQL</p>
+            </div>
+            <div>
+              <div class="progress-bar">
+                <p>Node Js <span>90%</span></p>
+                <progress max="100" value="90"></progress>
+              </div>
+              <div class="progress-bar">
+                <p>PostgreSQL <span>60%</span></p>
+                <progress max="100" value="60"></progress>
+              </div>
+            </div>
+          </section>
+          
+          <h2 id="Resume">My <span class="colored">Experience</span></h2>
+          <div class="divider ltr"></div>
+          
+          <section class="experience">
+            <div class="experience">
+              <h2>Senior Python Developer</h2>
+              <h4>Google Inc. <span class="date">Oct, 2018 </span> &#x26AC; <span class="date">Dec, 2020</span></h4>
+              <p>With over a year of hands-on experience, I specialize in developing scalable applications using Django, Flask, and FastAPI, along with designing efficient RESTful APIs. I work with relational and NoSQL databases like PostgreSQL, MySQL, and MongoDB, and have deployed projects on AWS and Google Cloud. My toolkit includes Docker, Kubernetes, and CI/CD pipelines to streamline development and deployment.</p>
+              <h2>Full stack Web Developer</h2>
+              <h4>Integrity Software Icc. <span class="date">Oct, 2010 </span> &#x26AC; <span class="date">Dec, 2014</span></h4>
+              <p>Being a full-stack web developer is like being a digital handyman—you get to build, fix, and improve every part of a website or app. On any given day, I might be designing a sleek front-end interface with React, tweaking a backend API in Node.js, or wrestling with a stubborn database query in SQL. It's equal parts creativity and problem-solving; one moment, I'm making sure a button looks perfect, and the next, I'm optimizing server performance to handle thousands of users. The best part? Seeing an idea come to life, from a rough sketch to a fully functional product that people actually use. Sure, there are frustrating bugs and endless learning curves, but that "aha!" moment when everything finally works makes it all worth it.</p>
+            </div>
+          </section>
+          
+          
+          <h2>My <span class="colored">contributions</span></h2>
+          <div class="divider ltr"></div>
+          
+          <section class="contribution">
+            <div class="wrapper">
+              <activity-graph
+                  range-start="2021-01-01"
+                  range-end="2021-12-31"
+                  activity-levels="0,1,2,3,5" id="activity-graph"></activity-graph>
+                  </div>
+                  </section>
+          
+          <h1 id="Project">My <span class="colored">Projects</span></h1>
+          <div class="divider ltr"></div>
+          
+          <section class="projects">
+            <div class="project-1">
+              <img src="1.png" alt="1">
+              <h3>Project <span class="colored">Title-The Logo of Nexus</span></h3>
+            </div>
+            <div class="project-2">
+              <img src="2.png" alt="1">
+              <h3>Project <span class="colored">Title-The Mobile View</span></h3>
+            </div>
+            <div class="project-3">
+              <img src="3.png" alt="1">
+              <h3>Project <span class="colored">Title-The Desktop View</span></h3>
+            </div>
+            <div class="project-4">
+              <img src="4.png" alt="1">
+              <h3>Project <span class="colored">Title-The Main Function</span></h3>
+            </div>
+          </section>
+          
+          <h1 id="Contact">Contact <span class="colored">Me!</span></h1>
+          <div class="divider ltr"></div>
+          
+          <section>
+            <iframe class="map" width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d843.5416780928635!2d124.65066536421381!3d8.477110410688313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32fff2d03698f83f%3A0x4fc06339af84a029!2sTH%20Cagayan%20Inc.!5e0!3m2!1sen!2sph!4v1746693402657!5m2!1sen!2sph" height="300" frameborder="0"></iframe>
+            
+            <form action="#" class="contact"> 
+            <div>
+              <input type="text" class="input" name="firstname" placeholder="Your Name..." required>
+              </div>
+              <div>
+                <input type="text" class="input" name="lastname" placeholder="Your Last Name..." required>
+                </div>
+                <div>
+                  <input type="email" class="input" name="email" placeholder="Your Email Address..." required>
+                  </div>
+                  <div>
+                    <textarea class="input" name="message" rows="4" placeholder="Write something..." required></textarea>
+                    </div>
+                    <div>
+                      <button class="submit" type="submit">Send Message</button>
+                      </div>
+                  </form>
+          </section>
+          
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    
+  </body>
+</html>
